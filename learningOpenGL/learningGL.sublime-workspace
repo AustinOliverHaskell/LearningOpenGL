@@ -1,0 +1,920 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"shar",
+				"shaders"
+			],
+			[
+				"wind",
+				"windowName"
+			],
+			[
+				"WIND",
+				"WINDOW_HEIGHT"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"numb",
+				"numberOfCycles"
+			],
+			[
+				"deb",
+				"Debugging"
+			],
+			[
+				"pop",
+				"populationSize"
+			],
+			[
+				"dna",
+				"dnaLayers"
+			],
+			[
+				"Obj",
+				"ObjFileBuilder"
+			],
+			[
+				"Str",
+				"Structure"
+			],
+			[
+				"get",
+				"getRandomChar"
+			],
+			[
+				"mut",
+				"mutate"
+			],
+			[
+				"t",
+				"titleText"
+			],
+			[
+				"title",
+				"titleFont"
+			],
+			[
+				"body",
+				"bodyFont"
+			],
+			[
+				"to",
+				"toString"
+			],
+			[
+				"test",
+				"testEvaluator"
+			],
+			[
+				"s",
+				"structure"
+			],
+			[
+				"are",
+				"area"
+			],
+			[
+				"rad",
+				"random"
+			],
+			[
+				"file",
+				"fileOpened"
+			],
+			[
+				"de",
+				"debugingEnabled"
+			],
+			[
+				"en",
+				"enable"
+			],
+			[
+				"LIB",
+				"LIBLOCATION"
+			],
+			[
+				"LI",
+				"LIBRARY"
+			],
+			[
+				"lBu",
+				"lBulletSoftBody"
+			],
+			[
+				"lBull",
+				"lBulletCollision"
+			],
+			[
+				"lB",
+				"lBulletSoftBody"
+			],
+			[
+				"set",
+				"setZIndex"
+			],
+			[
+				"ab",
+				"abstract"
+			],
+			[
+				"layer",
+				"layer3"
+			],
+			[
+				"new",
+				"newIndex"
+			],
+			[
+				"z",
+				"zIndex"
+			],
+			[
+				"a",
+				"append"
+			],
+			[
+				"con",
+				"constructLayer"
+			],
+			[
+				"la",
+				"layerNumber"
+			],
+			[
+				"Layer",
+				"layerNumber"
+			],
+			[
+				"inde",
+				"index"
+			],
+			[
+				"w",
+				"write"
+			],
+			[
+				"cons",
+				"constructHeader"
+			],
+			[
+				"find",
+				"findUsableArea"
+			],
+			[
+				"dea",
+				"dealACard"
+			],
+			[
+				"num",
+				"numCards"
+			],
+			[
+				"play",
+				"players"
+			],
+			[
+				"pla",
+				"players"
+			],
+			[
+				"Deck",
+				"DeckException"
+			],
+			[
+				"Dec",
+				"DeckException"
+			],
+			[
+				"direc",
+				"fillDirection"
+			],
+			[
+				"fill",
+				"fillDirection"
+			],
+			[
+				"del",
+				"deltaError"
+			],
+			[
+				"delta",
+				"deltax"
+			],
+			[
+				"log",
+				"logText"
+			],
+			[
+				"debu",
+				"debugText"
+			],
+			[
+				"deal",
+				"dealACard"
+			],
+			[
+				"S",
+				"SPADES"
+			],
+			[
+				"HEARTS",
+				"HEARTS"
+			],
+			[
+				"ge",
+				"genes"
+			],
+			[
+				"String",
+				"StringBuilder"
+			],
+			[
+				"is",
+				"isPixelOnLine"
+			],
+			[
+				"st",
+				"startPoint"
+			],
+			[
+				"x",
+				"xSize"
+			],
+			[
+				"po",
+				"pointCount"
+			],
+			[
+				"ySize",
+				"ySize-1"
+			],
+			[
+				"flood",
+				"floodFill"
+			],
+			[
+				"has",
+				"hasBlue"
+			],
+			[
+				"end",
+				"endX"
+			],
+			[
+				"start",
+				"startY"
+			],
+			[
+				"sta",
+				"startY"
+			],
+			[
+				"y",
+				"ySize"
+			],
+			[
+				"val",
+				"validEnd"
+			],
+			[
+				"mutat",
+				"mutationRate"
+			],
+			[
+				"chara",
+				"characteristicDigitCount"
+			],
+			[
+				"Su",
+				"Subtract"
+			],
+			[
+				"ret",
+				"retVal"
+			],
+			[
+				"E",
+				"EXPEDTED"
+			],
+			[
+				"number",
+				"numberOfCharacters"
+			],
+			[
+				"char",
+				"characteristicDigitCount"
+			],
+			[
+				"print",
+				"printMessage"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "main.cpp",
+			"settings":
+			{
+				"buffer_size": 241,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Graphics.h",
+			"settings":
+			{
+				"buffer_size": 528,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Graphics.cpp",
+			"settings":
+			{
+				"buffer_size": 6800,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Cube.cpp",
+			"settings":
+			{
+				"buffer_size": 968,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Cube.h",
+			"settings":
+			{
+				"buffer_size": 278,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "controls.h",
+			"settings":
+			{
+				"buffer_size": 31,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "#pragma once"
+			}
+		},
+		{
+			"file": "makefile.make",
+			"settings":
+			{
+				"buffer_size": 307,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Enable Package"
+			],
+			[
+				"todo",
+				"TodoReview: Open Files"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"package control ",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 461.0
+	},
+	"console":
+	{
+		"height": 410.0,
+		"history":
+		[
+			"exit",
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/austin/Desktop/learningOpenGL",
+		"/home/austin/Desktop/learningOpenGL/shaders",
+		"/home/austin/Desktop/learningOpenGL/shaders"
+	],
+	"file_history":
+	[
+		"/home/austin/Desktop/learningOpenGL/cube.cpp",
+		"/home/austin/Desktop/learningOpenGL/cube.h",
+		"/home/austin/Desktop/learningOpenGL/glHeader.h",
+		"/home/austin/Desktop/learningOpenGL/Driver",
+		"/home/austin/Desktop/learningOpenGL/shapeData.h",
+		"/home/austin/Desktop/learningOpenGL/makefile.make",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/PhysicsEngine/Simulation.cpp",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/Debug.java",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/Dna.java",
+		"/home/austin/Desktop/SoftwareDev/Group/ComparativeNewsAggregator/Compare.html",
+		"/home/austin/Desktop/SoftwareDev/Group/ComparativeNewsAggregator/index.html",
+		"/home/austin/Desktop/SoftwareDev/Group/ComparativeNewsAggregator/sassyScript.sh",
+		"/home/austin/Desktop/SoftwareDev/Group/ComparativeNewsAggregator/front.scss",
+		"/home/austin/Desktop/SoftwareDev/Group/ComparativeNewsAggregator/main.scss",
+		"/home/austin/Desktop/learningOpenGL/Graphics.cpp",
+		"/home/austin/Desktop/learningOpenGL/main.cpp",
+		"/home/austin/Desktop/learningOpenGL/Graphics.h",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/PhysicsEngine/shader.cpp",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/PhysicsEngine/shaders/SimpleVertexShader.vertexshader",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/PhysicsEngine/shaders/SimpleTransform.vertexshader",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/PhysicsEngine/shaders/SimpleFragmentShader.fragmentshader",
+		"/home/austin/Desktop/SoftwareDev/Group/ComparativeNewsAggregator/article.html",
+		"/home/austin/Desktop/SoftwareDev/Group/ComparativeNewsAggregator/home.html",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/PhysicsEngine/main.cpp",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/PhysicsEngine/h/glHeaders.h",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/PhysicsEngine/h/Simulation.h",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/comp.sh",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/PhysicsEngine/makefile.make",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/compiled/obj/6PAMN9B2_FJE9__F2Y6IRRT4P.obj",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/ObjFileBuilder.java",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/compiled/obj/random_multi_layer_test.obj",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/Evaluator.java",
+		"/home/austin/Documents/ClientProxy.java",
+		"/home/austin/Documents/InstructorProxy.java",
+		"/home/austin/Documents/InstructorSubject.java",
+		"/home/austin/Documents/ProxyGUI.java",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/compiled/obj/_8I_CY3HM78BS__C_YNJ5J0JH.obj",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/TestingSuite.java",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/Driver.java",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/PhysicsEngine/h/shader.h",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/PhysicsEngine/h/headers.h",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/PhysicsEngine/BasicExample.cpp",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/Structure.java",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/StructureFile.java",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/9_YFWPQBBJR4T1VA1A_7.obj",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/Object.obj",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/compiled/obj/test.obj",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/PhysicsEngine/Debug.cpp",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/PhysicsEngine/h/Debug.h",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/Layer.java",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/Member.java",
+		"/home/austin/Desktop/SoftwareDev/Group/ComparativeNewsAggregator/main.css",
+		"/home/austin/Desktop/SoftwareDev/Group/ComparativeNewsAggregator/styles.css",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/PhysicsEngine/h/CommonInterfaces/CommonRigidBodyBase.h",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/Vec.java",
+		"/home/austin/Desktop/DailyChallanges/AddingCalculator/DailyChallange331.go",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/PhysicsEngine/h/BasicExample.h",
+		"/home/austin/Documents/BulletSource/bullet3/examples/BasicDemo/BasicExample.cpp",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/PhysicsEngine/h/CommonInterfaces/CommonWindowInterface.h",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/PhysicsEngine/BasicExample.h",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/PhysicsEngine/Debug.h",
+		"/home/austin/Desktop/Testing/main.cpp",
+		"/home/austin/Desktop/Testing/base.h",
+		"/home/austin/Desktop/Testing/Derive.h",
+		"/usr/local/include/bullet/btBulletDynamicsCommon.h",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/ExtendedVec.java",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/PhysicsEngine/Makefile.make",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/PhysicsEngine/headers.h",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/compiled/obj/cube_test.obj",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/compiled/log.txt",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/compiled/obj/random_test.obj",
+		"/home/austin/Desktop/test.cpp",
+		"/home/austin/Desktop/AustinShellOS/AustinShell.c",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/compiled/test.obj",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/makefile.make",
+		"/home/austin/Desktop/DeckProject.txt",
+		"/home/austin/Desktop/SoftwareDev/Deck Project/DeckProgramPair/TableTest.java",
+		"/home/austin/Desktop/SoftwareDev/Deck Project/DeckProgramPair/CardTest.java",
+		"/home/austin/Desktop/SoftwareDev/Deck Project/DeckProgramPair/DeckTest.java",
+		"/home/austin/Desktop/test.obj",
+		"/home/austin/Desktop/SoftwareDev/Deck Project/DeckProgramPair/Driver.java",
+		"/home/austin/Desktop/SoftwareDev/Deck Project/DeckProgramPair/Card.java",
+		"/home/austin/Desktop/SoftwareDev/Deck Project/DeckProgramPair/Table.java",
+		"/home/austin/Desktop/SoftwareDev/Deck Project/DeckProgramPair/DeckException.java",
+		"/home/austin/Desktop/SoftwareDev/Deck Project/DeckProgramPair/Deck.java",
+		"/home/austin/Desktop/DailyChallanges/MessingWithGolang/uint.go",
+		"/home/austin/Desktop/DailyChallanges/MessingWithGolang/DataStructs/LinkedList.go",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/Evaluator.java",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/Layer.java",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/ObjFileBuilder.java",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/Vec.java",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/Structure.java",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/Dna.java",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/Driver.java",
+		"/home/austin/Desktop/SoftwareDev/Driver.java",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/DNA.java",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/Dna.class",
+		"/home/austin/Documents/Float-Math-With-Ints/charMantissaDriver.cpp",
+		"/home/austin/Documents/Float-Math-With-Ints/Divide.h",
+		"/home/austin/Desktop/DailyChallanges/AddingCalculator/DailyChallange331_test.go",
+		"/home/austin/Desktop/Thesis/Java/Driver.java",
+		"/home/austin/Downloads/p4/server.rb",
+		"/home/austin/Downloads/p4/public/script.js",
+		"/home/austin/Downloads/p4/public/main.css",
+		"/home/austin/Downloads/p4/public/index.html",
+		"/home/austin/Downloads/p4/defs.rb",
+		"/home/austin/Desktop/DailyChallanges/MessingWithGolang/IOTest.go",
+		"/home/austin/Documents/Float-Math-With-Ints/subtract.h",
+		"/home/austin/Documents/Float-Math-With-Ints/multiply.h",
+		"/home/austin/Documents/Float-Math-With-Ints/mantissa.h",
+		"/home/austin/Documents/Float-Math-With-Ints/header.h",
+		"/home/austin/Documents/Float-Math-With-Ints/characteristic.h",
+		"/home/austin/Documents/Float-Math-With-Ints/add.h",
+		"/home/austin/Documents/Float-Math-With-Ints/multiply.c",
+		"/home/austin/Desktop/DailyChallanges/DailyChallange331_test.go",
+		"/home/austin/Desktop/DailyChallanges/DailyChallange331.go",
+		"/home/austin/Desktop/DailyChallanges/DailyChallange333.go",
+		"/home/austin/Documents/Float-Math-With-Ints/multiply.cpp",
+		"/home/austin/Documents/CS4350CodeReviewFall2017Group1/multiply.c",
+		"/home/austin/Documents/Computer-Science-Club/IdeaList.txt",
+		"/home/austin/Desktop/Thesis/Go/main.go",
+		"/home/austin/Desktop/Thesis/Driver.java",
+		"/home/austin/Desktop/untitled.make",
+		"/home/austin/Desktop/tutor.cpp"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"h",
+			"\t\n",
+			"fork",
+			"getPoints",
+			"findSlope",
+			"System",
+			"HORIZONTAL",
+			"black",
+			"\\0",
+			"was Incorrect.",
+			") ",
+			"was Incorrect.",
+			"malloc",
+			"medium_array_length",
+			"mediumarray",
+			"short_array_length",
+			"shortarray",
+			"int_max",
+			"shouldconvert",
+			"int_min",
+			"int_max",
+			"@",
+			"int_min",
+			"int_max",
+			"largearray",
+			"mediumarray",
+			"shortarray",
+			"large_array_length",
+			"medium_array_length",
+			"short_array_length",
+			"shouldConvert",
+			"int_min",
+			"int_max"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "main.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 241,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								161,
+								161
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Graphics.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 528,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Graphics.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6800,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2631,
+								2631
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1596.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Cube.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 968,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Cube.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 278,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								158,
+								158
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "controls.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 31,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								31,
+								31
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#pragma once",
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "makefile.make",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 307,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								233,
+								233
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Makefile/Makefile.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "learningGL.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 333.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

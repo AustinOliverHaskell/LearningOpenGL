@@ -4,12 +4,36 @@
 		"selected_items":
 		[
 			[
-				"shar",
-				"shaders"
+				"GLF",
+				"GLFW_PRESS"
+			],
+			[
+				"GL",
+				"GL_FALSE"
+			],
+			[
+				"h",
+				"hAngle"
+			],
+			[
+				"mouse",
+				"mouseY"
+			],
+			[
+				"windo",
+				"WINDOW_HEIGHT"
 			],
 			[
 				"wind",
-				"windowName"
+				"WINDOW_WIDTH"
+			],
+			[
+				"mou",
+				"mouseY"
+			],
+			[
+				"shar",
+				"shaders"
 			],
 			[
 				"WIND",
@@ -320,27 +344,46 @@
 	"buffers":
 	[
 		{
-			"file": "main.cpp",
+			"file": "Graphics.cpp",
 			"settings":
 			{
-				"buffer_size": 241,
+				"buffer_size": 6757,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Graphics.h",
+			"file": "glHeader.h",
 			"settings":
 			{
-				"buffer_size": 528,
+				"buffer_size": 245,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Graphics.cpp",
+			"file": "Controls.cpp",
 			"settings":
 			{
-				"buffer_size": 6800,
+				"buffer_size": 3133,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Plane.h",
+			"settings":
+			{
+				"buffer_size": 290,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "// Plane"
+			}
+		},
+		{
+			"file": "makefile.make",
+			"settings":
+			{
+				"buffer_size": 334,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -349,33 +392,34 @@
 			"file": "Cube.cpp",
 			"settings":
 			{
-				"buffer_size": 968,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Cube.h",
-			"settings":
-			{
-				"buffer_size": 278,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "controls.h",
-			"settings":
-			{
-				"buffer_size": 31,
+				"buffer_size": 987,
 				"encoding": "UTF-8",
-				"line_ending": "Unix",
-				"name": "#pragma once"
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "makefile.make",
+			"file": "defs.h",
 			"settings":
 			{
-				"buffer_size": 307,
+				"buffer_size": 102,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "shapeData.h",
+			"settings":
+			{
+				"buffer_size": 2816,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ObjFileLoader.h",
+			"settings":
+			{
+				"buffer_size": 216,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -437,12 +481,26 @@
 	],
 	"file_history":
 	[
+		"/home/austin/Desktop/learningOpenGL/Plane.cpp",
+		"/home/austin/Desktop/learningOpenGL/Graphics.h",
+		"/home/austin/Desktop/learningOpenGL/Controls.h",
+		"/home/austin/Desktop/learningOpenGL/makefile.make",
+		"/home/austin/Desktop/learningOpenGL/Controls.cpp",
+		"/home/austin/Desktop/learningOpenGL/defs.h",
+		"/home/austin/Desktop/learningOpenGL/shaders/SimpleTransform.vertexshader",
+		"/home/austin/Desktop/test.cpp",
+		"/home/austin/Desktop/learningOpenGL/Cube.cpp",
+		"/home/austin/Desktop/learningOpenGL/main.cpp",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/TestingSuite.java",
+		"/home/austin/Desktop/learningOpenGL/Cube.h",
+		"/home/austin/Desktop/learningOpenGL/Graphics.cpp",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/Evaluator.java",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/compiled/obj/random_multi_layer_test.obj",
 		"/home/austin/Desktop/learningOpenGL/cube.cpp",
 		"/home/austin/Desktop/learningOpenGL/cube.h",
 		"/home/austin/Desktop/learningOpenGL/glHeader.h",
 		"/home/austin/Desktop/learningOpenGL/Driver",
 		"/home/austin/Desktop/learningOpenGL/shapeData.h",
-		"/home/austin/Desktop/learningOpenGL/makefile.make",
 		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/PhysicsEngine/Simulation.cpp",
 		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/Debug.java",
 		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/Dna.java",
@@ -451,9 +509,6 @@
 		"/home/austin/Desktop/SoftwareDev/Group/ComparativeNewsAggregator/sassyScript.sh",
 		"/home/austin/Desktop/SoftwareDev/Group/ComparativeNewsAggregator/front.scss",
 		"/home/austin/Desktop/SoftwareDev/Group/ComparativeNewsAggregator/main.scss",
-		"/home/austin/Desktop/learningOpenGL/Graphics.cpp",
-		"/home/austin/Desktop/learningOpenGL/main.cpp",
-		"/home/austin/Desktop/learningOpenGL/Graphics.h",
 		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/PhysicsEngine/shader.cpp",
 		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/PhysicsEngine/shaders/SimpleVertexShader.vertexshader",
 		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/PhysicsEngine/shaders/SimpleTransform.vertexshader",
@@ -467,14 +522,11 @@
 		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/PhysicsEngine/makefile.make",
 		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/compiled/obj/6PAMN9B2_FJE9__F2Y6IRRT4P.obj",
 		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/ObjFileBuilder.java",
-		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/compiled/obj/random_multi_layer_test.obj",
-		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/Evaluator.java",
 		"/home/austin/Documents/ClientProxy.java",
 		"/home/austin/Documents/InstructorProxy.java",
 		"/home/austin/Documents/InstructorSubject.java",
 		"/home/austin/Documents/ProxyGUI.java",
 		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/compiled/obj/_8I_CY3HM78BS__C_YNJ5J0JH.obj",
-		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/TestingSuite.java",
 		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/Driver.java",
 		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/PhysicsEngine/h/shader.h",
 		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/PhysicsEngine/h/headers.h",
@@ -508,7 +560,6 @@
 		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/compiled/obj/cube_test.obj",
 		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/compiled/log.txt",
 		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/compiled/obj/random_test.obj",
-		"/home/austin/Desktop/test.cpp",
 		"/home/austin/Desktop/AustinShellOS/AustinShell.c",
 		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/compiled/test.obj",
 		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/makefile.make",
@@ -557,10 +608,7 @@
 		"/home/austin/Documents/Float-Math-With-Ints/multiply.cpp",
 		"/home/austin/Documents/CS4350CodeReviewFall2017Group1/multiply.c",
 		"/home/austin/Documents/Computer-Science-Club/IdeaList.txt",
-		"/home/austin/Desktop/Thesis/Go/main.go",
-		"/home/austin/Desktop/Thesis/Driver.java",
-		"/home/austin/Desktop/untitled.make",
-		"/home/austin/Desktop/tutor.cpp"
+		"/home/austin/Desktop/Thesis/Go/main.go"
 	],
 	"find":
 	{
@@ -578,6 +626,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Cube",
 			"h",
 			"\t\n",
 			"fork",
@@ -628,24 +677,53 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "main.cpp",
+					"file": "Graphics.cpp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 241,
+						"buffer_size": 6757,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								161,
-								161
+								469,
+								469
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "glHeader.h",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 245,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -656,82 +734,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Graphics.h",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 528,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "Graphics.cpp",
+					"file": "Controls.cpp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6800,
+						"buffer_size": 3133,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2631,
-								2631
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1596.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "Cube.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 968,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
+								350,
+								350
 							]
 						],
 						"settings":
@@ -747,20 +767,78 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "Cube.h",
+					"buffer": 3,
+					"file": "Plane.h",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 278,
+						"buffer_size": 290,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								158,
-								158
+								8,
+								8
+							]
+						],
+						"settings":
+						{
+							"auto_name": "// Plane",
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "makefile.make",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 334,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								221,
+								221
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Makefile/Makefile.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Cube.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 987,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								987,
+								987
 							]
 						],
 						"settings":
@@ -772,64 +850,113 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "controls.h",
+					"buffer": 6,
+					"file": "defs.h",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 31,
+						"buffer_size": 102,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								31,
-								31
+								80,
+								80
 							]
 						],
 						"settings":
 						{
-							"auto_name": "#pragma once",
 							"syntax": "Packages/C++/C++.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "makefile.make",
+					"buffer": 7,
+					"file": "shapeData.h",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 307,
+						"buffer_size": 2816,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								233,
-								233
+								2478,
+								2478
+							],
+							[
+								2503,
+								2503
+							],
+							[
+								2528,
+								2528
+							],
+							[
+								2553,
+								2553
+							],
+							[
+								2578,
+								2578
+							],
+							[
+								2603,
+								2603
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Makefile/Makefile.sublime-syntax"
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1254.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "ObjFileLoader.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 216,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								216,
+								216
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 8,
 					"type": "text"
 				}
 			]
@@ -841,7 +968,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 39.0
 	},
 	"layout":
 	{
@@ -912,7 +1039,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 333.0,
+	"side_bar_width": 244.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

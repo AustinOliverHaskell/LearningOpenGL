@@ -1,31 +1,31 @@
-#include "Cube.h"
+#include "Plane.h"
 #include "glHeader.h"
 
 using namespace glm;
 
-Cube::Cube()
+Plane::Plane()
 {
 	glGenBuffers(1, &verticies);
 	glBindBuffer(GL_ARRAY_BUFFER, verticies);
-	glBufferData(GL_ARRAY_BUFFER, sizeof(g_vertex_buffer_data), g_vertex_buffer_data, GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(g_vertex_buffer_data_plane), g_vertex_buffer_data_plane, GL_STATIC_DRAW);
 
 	glGenBuffers(1, &colors);
 	glBindBuffer(GL_ARRAY_BUFFER, colors);
-	glBufferData(GL_ARRAY_BUFFER, sizeof(g_color_buffer_data), g_color_buffer_data, GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(g_color_buffer_data_plane), g_color_buffer_data_plane, GL_STATIC_DRAW);
 }
 
-Cube::~Cube()
+Plane::~Plane()
 {
 	glDeleteBuffers(1, &verticies);
 	glDeleteBuffers(1, &colors);
 }
 
-int Cube::getIndex()
+int Plane::getIndex()
 {
 	return index;
 }
 
-void Cube::draw()
+void Plane::draw()
 {
 	glEnableVertexAttribArray(0);
 	glBindBuffer(GL_ARRAY_BUFFER, verticies);
@@ -41,7 +41,7 @@ void Cube::draw()
 	glDisableVertexAttribArray(1);
 }
 
-mat4 Cube::getMatrix()
+mat4 Plane::getMatrix()
 {
 	return mat4(1.0f);
 }

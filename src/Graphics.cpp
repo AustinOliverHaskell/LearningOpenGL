@@ -2,6 +2,9 @@
 #include "Graphics.h"
 #include "shapeData.h"
 #include "Cube.h"
+#include "Plane.h"
+#include "Controls.h"
+
 
 using namespace glm;
 
@@ -59,10 +62,13 @@ void Graphics::openWindow()
 	}
 
 	glfwSetInputMode(window, GLFW_STICKY_KEYS, GL_TRUE);
+	glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 }
 
 void Graphics::setupGL()
 {
+	Controls * controls = new Controls(window);
+
 	// White background
 	glClearColor(1.0f, 1.0f, 1.0f, 0.0f);
 
@@ -73,49 +79,48 @@ void Graphics::setupGL()
 
 	glEnable(GL_DEPTH_TEST);
 	glDepthFunc(GL_LESS);
+	//glEnable(GL_CULL_FACE);
 
 	// Compile shaders
 	GLuint shaders = loadShaders("./shaders/SimpleVertexShader.vertexshader", "./shaders/SimpleFragmentShader.fragmentshader");
 
 	// Get a handle for our "MVP" uniform
-	// MVP = Model, View, and Projection matrix
+	// MVP = Model, View, and Projection
 	GLuint MatrixID = glGetUniformLocation(shaders, "MVP");
 
-	// Projection matrix : 45 Degree Field of View, 4:3 ratio, display range : 0.1 unit <-> 100 units
-	glm::mat4 Projection = perspective(radians(45.0f), 4.0f / 3.0f, 0.1f, 100.0f);
-
-	// Camera matrix
-	glm::mat4 View = glm::lookAt(
-	    glm::vec3(10,10,3), // Camera is at (4,3,3), in World Space
-	    glm::vec3(0,0,0), // and looks at the origin
-	    glm::vec3(0,1,0)  // Head is up (set to 0,-1,0 to look upside-down)
-	    );
-	  
-	// Model matrix : an identity matrix (model will be at the origin)
 	glm::mat4 Model  = glm::mat4(1.0f);
 	glm::mat4 Model2 = translate(glm::mat4(), vec3(-3.0f, 0.0f, 0.0f));
+	glm::mat4 Model3 = scale(glm::mat4(), vec3(4.0f, 0.0f, 4.0f));
+	Model3 = translate(Model3, vec3(0.0f, -1.0f, 0.0f));
 	// Our ModelViewProjection : multiplication of our 3 matrices
-	glm::mat4 MVP  = Projection * View * Model; // Remember, matrix multiplication is the other way around
-	glm::mat4 MVP2 = Projection * View * Model2;
 
 	Cube * cube = new Cube();
+	Plane * plane = new Plane();
 
 	do {
 		// Clear the screen
 		glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
+		controls->computeMatrices();
+
 		// Use our shader
 		glUseProgram(shaders);
 
+
+		glm::mat4 MVP2 = controls->getProjectionMatrix() * controls->getViewMatrix() * Model2;
 		glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &MVP2[0][0]);
-
 		cube->draw();
-		// Send our transformation to the currently bound shader, 
-		// in the "MVP" uniform
+
+		glm::mat4 MVP = controls->getProjectionMatrix() * controls->getViewMatrix() * Model;
 		glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &MVP[0][0]);
-
-		// 1rst attribute buffer : vertices
 		cube->draw();
+
+
+		// Draw a plane
+		glm::mat4 MVP3 = controls->getProjectionMatrix() * controls->getViewMatrix() * Model3;
+		glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &MVP3[0][0]);
+		plane->draw();
+
 		// cube->getMatrix();
 		// Swap buffers
 		glfwSwapBuffers(window);
@@ -123,8 +128,10 @@ void Graphics::setupGL()
 
 	} while(glfwGetKey(window, GLFW_KEY_ESCAPE ) != GLFW_PRESS && glfwWindowShouldClose(window) == 0 );
 
+
 	// Cleanup VBO
 	delete cube;
+	delete plane;
 	glDeleteVertexArrays(1, &VertexArrayID);
 	glDeleteProgram(shaders);
 }

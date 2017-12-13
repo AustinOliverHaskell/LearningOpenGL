@@ -9,11 +9,9 @@ int main(int argc, char* argv[])
 
 	g->openWindow();
 
-	cout << "here" << endl;
+	cout << endl <<"Running Learning" << endl;
 
 	g->setupGL();
-
-	sleep(5);
 
 	delete g;
 

@@ -8,10 +8,10 @@
 #include <algorithm>
 
 #include "glHeader.h"
+#include "defs.h"
 
-#define WINDOW_WIDTH 640
-#define WINDOW_HEIGHT 480
-#define TIME_WINDOW 10;
+
+#define TIME_WINDOW 10
 
 class Graphics
 {

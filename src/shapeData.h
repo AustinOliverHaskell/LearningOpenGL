@@ -78,16 +78,34 @@ static const GLfloat g_vertex_buffer_data[] = {
     1.0f, 1.0f, 1.0f,
     -1.0f, 1.0f, 1.0f,
     1.0f,-1.0f, 1.0f
-	};
+};
 
-	static const GLfloat g_vertex_buffer_data_triangle[] = { 
-		-1.0f, -1.0f, 0.0f,
-		 1.0f, -1.0f, 0.0f,
-		 0.0f,  1.0f, 0.0f
-	};
+static const GLfloat g_vertex_buffer_data_triangle[] = { 
+	-1.0f, -1.0f, 0.0f,
+	 1.0f, -1.0f, 0.0f,
+	 0.0f,  1.0f, 0.0f
+};
 
-	static const GLfloat g_color_buffer_data_triangle[] = {
+static const GLfloat g_color_buffer_data_triangle[] = {
+	0.0f,  0.0f,  0.0f,
 		0.0f,  0.0f,  0.0f,
-   		0.0f,  0.0f,  0.0f,
-    	0.0f,  0.0f,  0.0f
-	};
+	0.0f,  0.0f,  0.0f
+};
+
+static const GLfloat g_vertex_buffer_data_plane[] = {
+    -1.0f, -1.0f,  1.0f,
+     1.0f, -1.0f,  1.0f,
+     1.0f, -1.0f, -1.0f,
+    -1.0f, -1.0f,  1.0f,
+     1.0f, -1.0f, -1.0f,
+    -1.0f, -1.0f, -1.0f
+};
+
+static const GLfloat g_color_buffer_data_plane[] = {
+    0.0f,  0.0f,  0.8f,
+    0.0f,  0.0f,  0.8f,
+    0.0f,  0.0f,  0.8f,
+    0.0f,  0.0f,  0.8f,
+    0.0f,  0.0f,  0.8f,
+    0.0f,  0.0f,  0.8f
+};

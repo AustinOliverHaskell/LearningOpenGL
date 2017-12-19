@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"st",
+				"checkForStraightFlush"
+			],
+			[
+				"wi",
+				"wireframeEnabled"
+			],
+			[
 				"GLF",
 				"GLFW_PRESS"
 			],
@@ -264,10 +272,6 @@
 				"isPixelOnLine"
 			],
 			[
-				"st",
-				"startPoint"
-			],
-			[
 				"x",
 				"xSize"
 			],
@@ -347,52 +351,63 @@
 			"file": "Graphics.cpp",
 			"settings":
 			{
-				"buffer_size": 6757,
+				"buffer_size": 3766,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "glHeader.h",
+			"file": "FileLoader.h",
 			"settings":
 			{
-				"buffer_size": 245,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Controls.cpp",
-			"settings":
-			{
-				"buffer_size": 3133,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Plane.h",
-			"settings":
-			{
-				"buffer_size": 290,
+				"buffer_size": 390,
 				"encoding": "UTF-8",
 				"line_ending": "Unix",
-				"name": "// Plane"
+				"name": "// Obj File loader"
+			}
+		},
+		{
+			"file": "objLoaders/objload.h",
+			"settings":
+			{
+				"buffer_size": 10311,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "FileLoader.cpp",
+			"settings":
+			{
+				"buffer_size": 312,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Graphics.h",
+			"settings":
+			{
+				"buffer_size": 409,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "ShaderLoader.cpp",
+			"settings":
+			{
+				"buffer_size": 3262,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "// Shader Loader"
 			}
 		},
 		{
 			"file": "makefile.make",
 			"settings":
 			{
-				"buffer_size": 334,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Cube.cpp",
-			"settings":
-			{
-				"buffer_size": 987,
+				"buffer_size": 370,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -401,25 +416,7 @@
 			"file": "defs.h",
 			"settings":
 			{
-				"buffer_size": 102,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "shapeData.h",
-			"settings":
-			{
-				"buffer_size": 2816,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "ObjFileLoader.h",
-			"settings":
-			{
-				"buffer_size": 216,
+				"buffer_size": 235,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -475,12 +472,24 @@
 	},
 	"expanded_folders":
 	[
-		"/home/austin/Desktop/learningOpenGL",
-		"/home/austin/Desktop/learningOpenGL/shaders",
-		"/home/austin/Desktop/learningOpenGL/shaders"
+		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src",
+		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/obj",
+		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/objLoaders"
 	],
 	"file_history":
 	[
+		"/home/austin/Desktop/DO_NOT_SHARE.h",
+		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/objLoaders/objload.h",
+		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/objLoaders/objload.cpp",
+		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/ObjFileLoader.h",
+		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/shapeData.h",
+		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/Plane.h",
+		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/Controls.h",
+		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/Controls.cpp",
+		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/FileLoader.cpp",
+		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/obj/cube.obj",
+		"/home/austin/Desktop/SoftwareDev/Group/ComparativeNewsAggregator/scrape.js",
+		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/Cube.cpp",
 		"/home/austin/Desktop/learningOpenGL/Plane.cpp",
 		"/home/austin/Desktop/learningOpenGL/Graphics.h",
 		"/home/austin/Desktop/learningOpenGL/Controls.h",
@@ -596,23 +605,11 @@
 		"/home/austin/Downloads/p4/defs.rb",
 		"/home/austin/Desktop/DailyChallanges/MessingWithGolang/IOTest.go",
 		"/home/austin/Documents/Float-Math-With-Ints/subtract.h",
-		"/home/austin/Documents/Float-Math-With-Ints/multiply.h",
-		"/home/austin/Documents/Float-Math-With-Ints/mantissa.h",
-		"/home/austin/Documents/Float-Math-With-Ints/header.h",
-		"/home/austin/Documents/Float-Math-With-Ints/characteristic.h",
-		"/home/austin/Documents/Float-Math-With-Ints/add.h",
-		"/home/austin/Documents/Float-Math-With-Ints/multiply.c",
-		"/home/austin/Desktop/DailyChallanges/DailyChallange331_test.go",
-		"/home/austin/Desktop/DailyChallanges/DailyChallange331.go",
-		"/home/austin/Desktop/DailyChallanges/DailyChallange333.go",
-		"/home/austin/Documents/Float-Math-With-Ints/multiply.cpp",
-		"/home/austin/Documents/CS4350CodeReviewFall2017Group1/multiply.c",
-		"/home/austin/Documents/Computer-Science-Club/IdeaList.txt",
-		"/home/austin/Desktop/Thesis/Go/main.go"
+		"/home/austin/Documents/Float-Math-With-Ints/multiply.h"
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 22.0
 	},
 	"find_in_files":
 	{
@@ -626,6 +623,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			",",
+			"f",
 			"Cube",
 			"h",
 			"\t\n",
@@ -677,7 +676,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -686,15 +685,103 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6757,
+						"buffer_size": 3766,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								469,
-								469
+								2116,
+								2116
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 630.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "FileLoader.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 390,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								224,
+								224
+							]
+						],
+						"settings":
+						{
+							"auto_name": "// Obj File loader",
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "objLoaders/objload.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10311,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2745,
+								2745
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "FileLoader.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 312,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								125,
+								125
 							]
 						],
 						"settings":
@@ -710,107 +797,78 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "glHeader.h",
-					"semi_transient": true,
+					"buffer": 4,
+					"file": "Graphics.h",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 245,
+						"buffer_size": 409,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								85,
+								85
 							]
 						],
 						"settings":
 						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "ShaderLoader.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3262,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								115,
+								115
+							]
+						],
+						"settings":
+						{
+							"auto_name": "// Shader Loader",
 							"syntax": "Packages/C++/C++.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "Controls.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3133,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								350,
-								350
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "Plane.h",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 290,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								8,
-								8
-							]
-						],
-						"settings":
-						{
-							"auto_name": "// Plane",
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
+					"buffer": 6,
 					"file": "makefile.make",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 334,
+						"buffer_size": 370,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								221,
-								221
+								370,
+								370
 							]
 						],
 						"settings":
@@ -825,49 +883,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "Cube.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 987,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								987,
-								987
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
+					"buffer": 7,
 					"file": "defs.h",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 102,
+						"buffer_size": 235,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								80,
-								80
+								151,
+								151
 							]
 						],
 						"settings":
@@ -878,85 +907,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "shapeData.h",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2816,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2478,
-								2478
-							],
-							[
-								2503,
-								2503
-							],
-							[
-								2528,
-								2528
-							],
-							[
-								2553,
-								2553
-							],
-							[
-								2578,
-								2578
-							],
-							[
-								2603,
-								2603
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1254.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "ObjFileLoader.h",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 216,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								216,
-								216
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -964,7 +915,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 22.0
 	},
 	"input":
 	{
@@ -1001,7 +952,7 @@
 	"project": "learningGL.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 40.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1039,7 +990,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 244.0,
+	"side_bar_width": 50.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

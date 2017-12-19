@@ -20,7 +20,9 @@ Controls::Controls(GLFWwindow* w)
 	speed = 6.0f;
 	mouseSpeed = 0.01f;
 
-	position = glm::vec3( 10, 10, 3 );
+	position = glm::vec3( 10, -10, 3 );
+
+	wireframeEnabled = false;
 
 }
 
@@ -89,19 +91,19 @@ void Controls::computeMatrices()
 	glm::vec3 up = glm::cross( right, direction );
 
 	// Move forward
-	if (glfwGetKey( window, GLFW_KEY_UP ) == GLFW_PRESS){
+	if (glfwGetKey( window, GLFW_KEY_W ) == GLFW_PRESS){
 	    position += direction * deltaTime * speed;
 	}
 	// Move backward
-	if (glfwGetKey( window, GLFW_KEY_DOWN ) == GLFW_PRESS){
+	if (glfwGetKey( window, GLFW_KEY_S ) == GLFW_PRESS){
 	    position -= direction * deltaTime * speed;
 	}
 	// Strafe right
-	if (glfwGetKey( window, GLFW_KEY_RIGHT ) == GLFW_PRESS){
+	if (glfwGetKey( window, GLFW_KEY_D ) == GLFW_PRESS){
 	    position += right * deltaTime * speed;
 	}
 	// Strafe left
-	if (glfwGetKey( window, GLFW_KEY_LEFT ) == GLFW_PRESS){
+	if (glfwGetKey( window, GLFW_KEY_A ) == GLFW_PRESS){
 	    position -= right * deltaTime * speed;
 	}
 
@@ -130,6 +132,20 @@ void Controls::computeMatrices()
 	if (glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_PRESS)
 	{
 		position -= vec3(0.0f, 0.1f, 0.0f);
+	}
+
+	if (glfwGetKey(window, GLFW_KEY_Q) == GLFW_PRESS)
+	{
+		wireframeEnabled = !wireframeEnabled;
+
+		if (wireframeEnabled)
+		{
+			glPolygonMode( GL_FRONT_AND_BACK, GL_FILL );
+		}
+		else
+		{
+			glPolygonMode( GL_FRONT_AND_BACK, GL_LINE );
+		}
 	}
 
 	projectionMatrix = glm::perspective(glm::radians(FOV), ASPECT_RATIO, 0.1f, 100.0f);

@@ -31,4 +31,6 @@ private:
 	float mouseSpeed;
 
 	vec3 position;
+
+	bool wireframeEnabled;
 };

@@ -1,11 +1,13 @@
-#include "glHeader.h"
-#include "Graphics.h"
-#include "shapeData.h"
-#include "Cube.h"
-#include "Plane.h"
-#include "Controls.h"
-#include "defs.h"
-#include "FileLoader.h"
+#include "./h/glHeader.h"
+#include "./h/Graphics.h"
+#include "./h/shapeData.h"
+#include "./h/Cube.h"
+#include "./h/Plane.h"
+#include "./h/Controls.h"
+#include "./h/defs.h"
+#include "./h/FileLoader.h"
+#include "./h/GraphicDebugger.h"
+#include "./h/Model.h"
 
 using namespace glm;
 
@@ -69,9 +71,6 @@ void Graphics::openWindow()
 void Graphics::setupGL()
 {
 	Controls * controls = new Controls(window);
-	FileLoader * fileLoader = new FileLoader();
-
-	fileLoader->openFile("./obj/cube.obj");
 
 	// White background
 	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
@@ -92,16 +91,24 @@ void Graphics::setupGL()
 	// MVP = Model, View, and Projection
 	GLuint MatrixID = glGetUniformLocation(shaders, "MVP");
 
-	glm::mat4 Model  = translate(glm::mat4(), vec3(0.0f, -1.01f, 0.0f));
-	glm::mat4 Model2 = translate(glm::mat4(), vec3(-2.0f, -1.01f, -2.0f));
-	glm::mat4 Model3 = scale(glm::mat4(), vec3(8.0f, 0.0f, 8.0f));
+	glm::mat4 m1 = scale(mat4(), vec3(0.15f, 0.15f, 0.15f)); 
+	m1 = translate(m1, vec3(-1.0f, -1.0f, -1.0f));
+	m1 = rotate(m1, -90.0f, vec3(1.0f, 0.0f, 0.0f));
+
+	glm::mat4 m2 = translate(glm::mat4(), vec3(-2.0f, -1.01f, -2.0f));
+	glm::mat4 m3 = scale(glm::mat4(), vec3(8.0f, 0.0f, 8.0f));
 	//Model3 = translate(Model3, vec3(0.0f, -1.0f, 0.0f));
 	// Our ModelViewProjection : multiplication of our 3 matrices
 
 	Cube * cube = new Cube();
 	Plane * plane = new Plane();
+	Model * model = new Model(shaders, "./obj/random_multi_layer_test.obj");
+	GraphicDebugger * debugger = new GraphicDebugger();
+
+	model->initBuffers();
 
 	do {
+
 		// Clear the screen
 		glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
@@ -110,18 +117,41 @@ void Graphics::setupGL()
 		// Use our shader
 		glUseProgram(shaders);
 
+		if (glfwGetKey( window, GLFW_KEY_B ) == GLFW_PRESS){
+	
+			m1 = glm::rotate(m1, 0.025f, vec3(1.0f, 0.0f, 0.0f));
 
-		glm::mat4 MVP2 = controls->getProjectionMatrix() * controls->getViewMatrix() * Model2;
+		}
+
+		if (glfwGetKey( window, GLFW_KEY_N ) == GLFW_PRESS){
+	
+			m1 = glm::rotate(m1, 0.025f, vec3(0.0f, 1.0f, 0.0f));
+
+		}
+
+		if (glfwGetKey( window, GLFW_KEY_M ) == GLFW_PRESS){
+	
+			m1 = glm::rotate(m1, 0.025f, vec3(0.0f, 0.0f, 1.0f));
+
+		}
+
+		if (glfwGetKey( window, GLFW_KEY_Q) == GLFW_PRESS)
+		{
+			debugger->showFPS();
+		}
+
+
+		glm::mat4 MVP2 = controls->getProjectionMatrix() * controls->getViewMatrix() * m2;
 		glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &MVP2[0][0]);
+		//cube->draw();
 		cube->draw();
 
-		glm::mat4 MVP = controls->getProjectionMatrix() * controls->getViewMatrix() * Model;
+		glm::mat4 MVP = controls->getProjectionMatrix() * controls->getViewMatrix() * m1;
 		glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &MVP[0][0]);
-		cube->draw();
-
+		model->draw();
 
 		// Draw a plane
-		glm::mat4 MVP3 = controls->getProjectionMatrix() * controls->getViewMatrix() * Model3;
+		glm::mat4 MVP3 = controls->getProjectionMatrix() * controls->getViewMatrix() * m3;
 		glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &MVP3[0][0]);
 		plane->draw();
 
@@ -136,6 +166,8 @@ void Graphics::setupGL()
 	// Cleanup VBO
 	delete cube;
 	delete plane;
+	delete model;
+	delete debugger;
 	glDeleteVertexArrays(1, &VertexArrayID);
 	glDeleteProgram(shaders);
 }

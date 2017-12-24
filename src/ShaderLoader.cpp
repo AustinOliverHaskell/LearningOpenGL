@@ -1,5 +1,5 @@
 // Shader Loader
-#include "defs.h"
+#include "./h/defs.h"
 #include <vector>
 #include <iostream>
 #include <fstream>

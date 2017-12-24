@@ -1,5 +1,5 @@
-#include "glHeader.h"
-#include "Graphics.h"
+#include "./h/glHeader.h"
+#include "./h/Graphics.h"
 
 using namespace std;
 

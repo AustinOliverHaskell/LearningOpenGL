@@ -4,6 +4,90 @@
 		"selected_items":
 		[
 			[
+				"sha",
+				"shapeData"
+			],
+			[
+				"print",
+				"printBinary"
+			],
+			[
+				"g_",
+				"g_color_buffer_data\t(shapeData.h)"
+			],
+			[
+				"init",
+				"initBuffers\t(Model.h)"
+			],
+			[
+				"face",
+				"faceCount"
+			],
+			[
+				"file",
+				"FileLoader"
+			],
+			[
+				"set",
+				"setupComplete"
+			],
+			[
+				"color",
+				"colorData"
+			],
+			[
+				"getSha",
+				"getShapeData\t(Model.h)"
+			],
+			[
+				"vertex",
+				"vertexData\t(FileLoader.cpp)"
+			],
+			[
+				"GL",
+				"GLfloat"
+			],
+			[
+				"verte",
+				"vertexCount"
+			],
+			[
+				"vert",
+				"verticies\t(FileLoader.h)"
+			],
+			[
+				"ver",
+				"vertexCount"
+			],
+			[
+				"GLFW",
+				"GLFW_PRESS"
+			],
+			[
+				"de",
+				"debugger"
+			],
+			[
+				"last",
+				"lastTime"
+			],
+			[
+				"las",
+				"lastTime"
+			],
+			[
+				"Grapi",
+				"GraphicDebugger"
+			],
+			[
+				"GRap",
+				"GraphicDebugger"
+			],
+			[
+				"Graphic",
+				"GraphicDebugger"
+			],
+			[
 				"st",
 				"checkForStraightFlush"
 			],
@@ -14,10 +98,6 @@
 			[
 				"GLF",
 				"GLFW_PRESS"
-			],
-			[
-				"GL",
-				"GL_FALSE"
 			],
 			[
 				"h",
@@ -116,14 +196,6 @@
 				"random"
 			],
 			[
-				"file",
-				"fileOpened"
-			],
-			[
-				"de",
-				"debugingEnabled"
-			],
-			[
 				"en",
 				"enable"
 			],
@@ -146,10 +218,6 @@
 			[
 				"lB",
 				"lBulletSoftBody"
-			],
-			[
-				"set",
-				"setZIndex"
 			],
 			[
 				"ab",
@@ -338,10 +406,6 @@
 			[
 				"char",
 				"characteristicDigitCount"
-			],
-			[
-				"print",
-				"printMessage"
 			]
 		]
 	},
@@ -351,26 +415,16 @@
 			"file": "Graphics.cpp",
 			"settings":
 			{
-				"buffer_size": 3766,
+				"buffer_size": 4520,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "FileLoader.h",
+			"file": "makefile.make",
 			"settings":
 			{
-				"buffer_size": 390,
-				"encoding": "UTF-8",
-				"line_ending": "Unix",
-				"name": "// Obj File loader"
-			}
-		},
-		{
-			"file": "objLoaders/objload.h",
-			"settings":
-			{
-				"buffer_size": 10311,
+				"buffer_size": 382,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -379,44 +433,59 @@
 			"file": "FileLoader.cpp",
 			"settings":
 			{
-				"buffer_size": 312,
+				"buffer_size": 1284,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Graphics.h",
+			"file": "h/FileLoader.h",
 			"settings":
 			{
-				"buffer_size": 409,
+				"buffer_size": 527,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "ShaderLoader.cpp",
+			"file": "h/Model.h",
 			"settings":
 			{
-				"buffer_size": 3262,
-				"encoding": "UTF-8",
-				"line_ending": "Unix",
-				"name": "// Shader Loader"
-			}
-		},
-		{
-			"file": "makefile.make",
-			"settings":
-			{
-				"buffer_size": 370,
+				"buffer_size": 955,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "defs.h",
+			"file": "Model.cpp",
 			"settings":
 			{
-				"buffer_size": 235,
+				"buffer_size": 2083,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Cube.cpp",
+			"settings":
+			{
+				"buffer_size": 995,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "main.cpp",
+			"settings":
+			{
+				"buffer_size": 256,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "h/shapeData.h",
+			"settings":
+			{
+				"buffer_size": 2811,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -435,7 +504,7 @@
 		[
 			[
 				"Package Control: ",
-				"Package Control: Enable Package"
+				"Package Control: List Packages"
 			],
 			[
 				"todo",
@@ -473,23 +542,42 @@
 	"expanded_folders":
 	[
 		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src",
-		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/obj",
+		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/h",
 		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/objLoaders"
 	],
 	"file_history":
 	[
-		"/home/austin/Desktop/DO_NOT_SHARE.h",
+		"/home/austin/Desktop/main.cpp",
+		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/Driver",
+		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/h/Cube.h",
+		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/Cube.cpp",
+		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/makefile.make",
+		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/obj/cube.obj",
 		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/objLoaders/objload.h",
+		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/h/glHeader.h",
+		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/h/Plane.h",
+		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/Controls.cpp",
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/Layer.java",
+		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/FileLoader.cpp",
+		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/Graphics.cpp",
+		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/main.cpp",
+		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/Plane.cpp",
+		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/ShaderLoader.cpp",
+		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/h/Controls.h",
+		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/h/defs.h",
+		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/h/FileLoader.h",
+		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/h/GraphicDebugger.h",
+		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/h/Graphics.h",
+		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/defs.h",
+		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/Graphics.h",
+		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/FileLoader.h",
+		"/home/austin/Desktop/DO_NOT_SHARE.h",
 		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/objLoaders/objload.cpp",
 		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/ObjFileLoader.h",
 		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/shapeData.h",
 		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/Plane.h",
 		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/Controls.h",
-		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/Controls.cpp",
-		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/FileLoader.cpp",
-		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/obj/cube.obj",
 		"/home/austin/Desktop/SoftwareDev/Group/ComparativeNewsAggregator/scrape.js",
-		"/home/austin/Documents/LearningOpenGL/LearningOpenGL/src/Cube.cpp",
 		"/home/austin/Desktop/learningOpenGL/Plane.cpp",
 		"/home/austin/Desktop/learningOpenGL/Graphics.h",
 		"/home/austin/Desktop/learningOpenGL/Controls.h",
@@ -547,7 +635,6 @@
 		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/compiled/obj/test.obj",
 		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/PhysicsEngine/Debug.cpp",
 		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/PhysicsEngine/h/Debug.h",
-		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/Layer.java",
 		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/code/Member.java",
 		"/home/austin/Desktop/SoftwareDev/Group/ComparativeNewsAggregator/main.css",
 		"/home/austin/Desktop/SoftwareDev/Group/ComparativeNewsAggregator/styles.css",
@@ -587,29 +674,11 @@
 		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/Evaluator.java",
 		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/Layer.java",
 		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/ObjFileBuilder.java",
-		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/Vec.java",
-		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/Structure.java",
-		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/Dna.java",
-		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/Driver.java",
-		"/home/austin/Desktop/SoftwareDev/Driver.java",
-		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/DNA.java",
-		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/Dna.class",
-		"/home/austin/Documents/Float-Math-With-Ints/charMantissaDriver.cpp",
-		"/home/austin/Documents/Float-Math-With-Ints/Divide.h",
-		"/home/austin/Desktop/DailyChallanges/AddingCalculator/DailyChallange331_test.go",
-		"/home/austin/Desktop/Thesis/Java/Driver.java",
-		"/home/austin/Downloads/p4/server.rb",
-		"/home/austin/Downloads/p4/public/script.js",
-		"/home/austin/Downloads/p4/public/main.css",
-		"/home/austin/Downloads/p4/public/index.html",
-		"/home/austin/Downloads/p4/defs.rb",
-		"/home/austin/Desktop/DailyChallanges/MessingWithGolang/IOTest.go",
-		"/home/austin/Documents/Float-Math-With-Ints/subtract.h",
-		"/home/austin/Documents/Float-Math-With-Ints/multiply.h"
+		"/home/austin/Desktop/Thesis/EvolvingStormResistantStructures/Source/Vec.java"
 	],
 	"find":
 	{
-		"height": 22.0
+		"height": 34.0
 	},
 	"find_in_files":
 	{
@@ -623,6 +692,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"getObjectData",
+			"colors",
+			"verticies",
+			"faces",
+			"faces.insert",
 			",",
 			"f",
 			"Cube",
@@ -676,7 +750,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -685,103 +759,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3766,
+						"buffer_size": 4520,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2116,
-								2116
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 630.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "FileLoader.h",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 390,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								224,
-								224
-							]
-						],
-						"settings":
-						{
-							"auto_name": "// Obj File loader",
-							"syntax": "Packages/C++/C++.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "objLoaders/objload.h",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 10311,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2745,
-								2745
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "FileLoader.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 312,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								125,
-								125
+								1275,
+								1275
 							]
 						],
 						"settings":
@@ -797,20 +783,76 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "Graphics.h",
+					"buffer": 1,
+					"file": "makefile.make",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 409,
+						"buffer_size": 382,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								85,
-								85
+								382,
+								382
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Makefile/Makefile.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "FileLoader.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1284,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								480,
+								480
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 273.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "h/FileLoader.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 527,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								18,
+								18
 							]
 						],
 						"settings":
@@ -822,58 +864,88 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "ShaderLoader.cpp",
+					"buffer": 4,
+					"file": "h/Model.h",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3262,
+						"buffer_size": 955,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								115,
-								115
+								394,
+								394
 							]
 						],
 						"settings":
 						{
-							"auto_name": "// Shader Loader",
+							"auto_name": "",
 							"syntax": "Packages/C++/C++.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "makefile.make",
+					"buffer": 5,
+					"file": "Model.cpp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 370,
+						"buffer_size": 2083,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								370,
-								370
+								721,
+								721
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Makefile/Makefile.sublime-syntax"
+							"auto_name": "",
+							"syntax": "Packages/C++/C++.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Cube.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 995,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								945,
+								945
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -884,19 +956,19 @@
 				},
 				{
 					"buffer": 7,
-					"file": "defs.h",
+					"file": "main.cpp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 235,
+						"buffer_size": 256,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								151,
-								151
+								135,
+								135
 							]
 						],
 						"settings":
@@ -909,13 +981,43 @@
 					},
 					"stack_index": 5,
 					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "h/shapeData.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2811,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1685,
+								1685
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 754.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
 				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 22.0
+		"height": 34.0
 	},
 	"input":
 	{
@@ -952,7 +1054,7 @@
 	"project": "learningGL.sublime-project",
 	"replace":
 	{
-		"height": 40.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -990,7 +1092,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 50.0,
+	"side_bar_width": 198.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

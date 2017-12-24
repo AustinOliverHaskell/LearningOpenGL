@@ -16,7 +16,10 @@ class FileLoader
 
 		bool openFile(string path);
 
-		GLfloat getObjectData();
+		uint getFaceCount();
+		uint getVertexCount();
+
+		GLfloat * getObjectData();
 
 	private:
 		vector <ifstream> fileRefrences;
@@ -24,4 +27,10 @@ class FileLoader
 		vector <glm::vec3> verticies;
 		vector <glm::vec2> uvs;
 		vector <glm::vec3> normals;
+
+		GLfloat * vertexData;
+		GLfloat * uvsData;
+
+		uint vertexCount; 
+		uint faceCount;
 };

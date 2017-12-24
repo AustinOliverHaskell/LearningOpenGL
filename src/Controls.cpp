@@ -1,6 +1,10 @@
-#include "Controls.h"
-#include "glHeader.h"
-#include "defs.h"
+#include "./h/Controls.h"
+#include "./h/glHeader.h"
+#include "./h/defs.h"
+
+#include "glm/ext.hpp"
+
+#include <iostream>
 
 using namespace glm;
 
@@ -73,6 +77,15 @@ void Controls::computeMatrices()
 	hAngle += mouseSpeed * (float)(WINDOW_WIDTH/2.0f - mouseX) * -1.0f;
 	vAngle += mouseSpeed * (float)(WINDOW_HEIGHT/2.0f - mouseY);
 
+	if (vAngle > 180.0f)
+	{
+		vAngle = 180.0f;
+	}
+	else if (vAngle < 0)
+	{
+		vAngle = 0;
+	}
+
 
 	// Compute the direction of the camera
 	//  Spherical coordinates to Cartesian coordinates conversion
@@ -134,7 +147,10 @@ void Controls::computeMatrices()
 		position -= vec3(0.0f, 0.1f, 0.0f);
 	}
 
-	if (glfwGetKey(window, GLFW_KEY_Q) == GLFW_PRESS)
+	static int oldState = GLFW_RELEASE;
+	int newState = glfwGetKey(window, GLFW_KEY_F);
+
+	if (newState == GLFW_RELEASE && oldState == GLFW_PRESS)
 	{
 		wireframeEnabled = !wireframeEnabled;
 
@@ -146,6 +162,15 @@ void Controls::computeMatrices()
 		{
 			glPolygonMode( GL_FRONT_AND_BACK, GL_LINE );
 		}
+	}
+	oldState = newState;
+
+	if (glfwGetKey(window, GLFW_KEY_P) == GLFW_PRESS)
+	{
+		std::cout << "Camera Info-- " << std::endl;
+		std::cout << "  position: " << to_string(position) << std::endl;
+		std::cout << "  direction: "<< to_string(direction) << std::endl;
+		std::cout << "  FOV: " << FOV << std::endl;
 	}
 
 	projectionMatrix = glm::perspective(glm::radians(FOV), ASPECT_RATIO, 0.1f, 100.0f);

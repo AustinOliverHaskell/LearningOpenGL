@@ -1,5 +1,5 @@
-#include "Cube.h"
-#include "glHeader.h"
+#include "./h/Cube.h"
+#include "./h/glHeader.h"
 
 using namespace glm;
 

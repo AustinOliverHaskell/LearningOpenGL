@@ -1,5 +1,5 @@
-#include "Plane.h"
-#include "glHeader.h"
+#include "./h/Plane.h"
+#include "./h/glHeader.h"
 
 using namespace glm;
 

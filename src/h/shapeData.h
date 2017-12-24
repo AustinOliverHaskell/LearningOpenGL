@@ -2,7 +2,7 @@
 // Shape Data
 
 // One color for each vertex. They were generated randomly.
-static const GLfloat g_color_buffer_data[] = {
+static GLfloat g_color_buffer_data[] = {
     0.583f,  0.771f,  0.014f,
     0.609f,  0.115f,  0.436f,
     0.327f,  0.483f,  0.844f,

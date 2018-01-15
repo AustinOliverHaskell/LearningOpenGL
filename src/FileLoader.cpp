@@ -22,6 +22,11 @@ GLfloat * FileLoader::getObjectData()
 	return vertexData;
 }
 
+GLfloat * FileLoader::getNormals()
+{
+	return &normals[0];
+}
+
 uint FileLoader::getFaceCount()
 {
 	return faceCount;
@@ -30,6 +35,12 @@ uint FileLoader::getFaceCount()
 uint FileLoader::getVertexCount()
 {
 	return vertexCount;
+}
+
+uint FileLoader::getNormalCount()
+{
+	return normals.size();
+
 }
 
 bool FileLoader::openFile(string path)
@@ -77,6 +88,12 @@ bool FileLoader::openFile(string path)
 	for (uint i = 0; i < temp.size(); i++)
 	{
 		vertexData[i] = temp[i];
+	}
+
+	for (auto i = model.normal.begin(); i != model.normal.end(); i++)
+	{
+		normals.push_back(*i);
+		cout << *i << endl;
 	}
 
 	return retVal;

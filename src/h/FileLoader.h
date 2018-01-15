@@ -18,15 +18,17 @@ class FileLoader
 
 		uint getFaceCount();
 		uint getVertexCount();
+		uint getNormalCount();
 
 		GLfloat * getObjectData();
+		GLfloat * getNormals();
 
 	private:
 		vector <ifstream> fileRefrences;
 
 		vector <glm::vec3> verticies;
 		vector <glm::vec2> uvs;
-		vector <glm::vec3> normals;
+		vector <float> normals;
 
 		GLfloat * vertexData;
 		GLfloat * uvsData;

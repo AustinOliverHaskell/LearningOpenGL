@@ -73,7 +73,7 @@ void Graphics::setupGL()
 	Controls * controls = new Controls(window);
 
 	// White background
-	glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
+	glClearColor(0.5f, 0.5f, 0.5f, 0.0f);
 
 
 	GLuint VertexArrayID;
@@ -91,21 +91,23 @@ void Graphics::setupGL()
 	// MVP = Model, View, and Projection
 	GLuint MatrixID = glGetUniformLocation(shaders, "MVP");
 
-	glm::mat4 m1 = scale(mat4(), vec3(0.15f, 0.15f, 0.15f)); 
-	m1 = translate(m1, vec3(-1.0f, -1.0f, -1.0f));
-	m1 = rotate(m1, -90.0f, vec3(1.0f, 0.0f, 0.0f));
+	mat4 m1;
+	m1 = rotate(mat4(), 90.0f, vec3(0.0f, 0.0f, 0.0f));
+	m1 = translate(m1, vec3(-5.0f, -5.0f, -5.0f));
+	//m1 = scale(mat4(), vec3(0.25f, 0.25f, 0.25f)); 
 
 	glm::mat4 m2 = translate(glm::mat4(), vec3(-2.0f, -1.01f, -2.0f));
 	glm::mat4 m3 = scale(glm::mat4(), vec3(8.0f, 0.0f, 8.0f));
 	//Model3 = translate(Model3, vec3(0.0f, -1.0f, 0.0f));
 	// Our ModelViewProjection : multiplication of our 3 matrices
 
-	Cube * cube = new Cube();
 	Plane * plane = new Plane();
-	Model * model = new Model(shaders, "./obj/random_multi_layer_test.obj");
+	Model * model = new Model(shaders, "./obj/cube.obj");
 	GraphicDebugger * debugger = new GraphicDebugger();
 
 	model->initBuffers();
+
+	model->printNormals();
 
 	do {
 
@@ -141,11 +143,6 @@ void Graphics::setupGL()
 		}
 
 
-		glm::mat4 MVP2 = controls->getProjectionMatrix() * controls->getViewMatrix() * m2;
-		glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &MVP2[0][0]);
-		//cube->draw();
-		cube->draw();
-
 		glm::mat4 MVP = controls->getProjectionMatrix() * controls->getViewMatrix() * m1;
 		glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &MVP[0][0]);
 		model->draw();
@@ -164,7 +161,6 @@ void Graphics::setupGL()
 
 
 	// Cleanup VBO
-	delete cube;
 	delete plane;
 	delete model;
 	delete debugger;

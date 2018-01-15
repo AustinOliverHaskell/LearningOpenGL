@@ -38,6 +38,7 @@ class Model
 
 		// ----- Other -----
 		std::string toString();
+		void printNormals();
 		// -----------------
 
 	private:
@@ -46,9 +47,11 @@ class Model
 
 		GLfloat * shapeData;
 		GLfloat * colorData;
+		GLfloat * normalData;
 
 		GLuint verticies;
 		GLuint colors;
+		GLuint normals;
 
 		bool setupComplete;
 

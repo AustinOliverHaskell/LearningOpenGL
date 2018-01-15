@@ -16,6 +16,7 @@ class Cube
 		mat4 getMatrix();
 		void translate();
 
+
 	private:
 		int index;
 		mat4   model;

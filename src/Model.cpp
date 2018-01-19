@@ -98,9 +98,9 @@ void Model::initBuffers()
 	glBindBuffer(GL_ARRAY_BUFFER, colors);
 	glBufferData(GL_ARRAY_BUFFER, faceCount * sizeof(vec3) * 3, colorData, GL_STATIC_DRAW);
 
-	glGenBuffers(1, &normals);
-	glBindBuffer(GL_ARRAY_BUFFER, normals);
-	glBufferData(GL_ARRAY_BUFFER, faceCount * sizeof(vec3) * 3, normalData, GL_STATIC_DRAW);
+	//glGenBuffers(1, &normals);
+	//glBindBuffer(GL_ARRAY_BUFFER, normals);
+	//glBufferData(GL_ARRAY_BUFFER, faceCount * sizeof(vec3) * 3, normalData, GL_STATIC_DRAW);
 
 	setupComplete = true;
 }
@@ -117,9 +117,9 @@ void Model::draw()
 		glBindBuffer(GL_ARRAY_BUFFER, colors);
 		glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
 
-		glEnableVertexAttribArray(2);
- 		glBindBuffer(GL_ARRAY_BUFFER, normals);
- 		glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
+		//glEnableVertexAttribArray(2);
+ 		//glBindBuffer(GL_ARRAY_BUFFER, normals);
+ 		//glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
 
 		glDrawArrays(GL_TRIANGLES, 0, sizeof(vec3)*faceCount*3);
 

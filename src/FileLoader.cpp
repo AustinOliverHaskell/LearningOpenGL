@@ -43,7 +43,7 @@ uint FileLoader::getNormalCount()
 
 }
 
-bool FileLoader::openFile(string path)
+bool FileLoader::openFile(string path, bool tesselate)
 {
 	bool retVal = true;
 
@@ -62,16 +62,12 @@ bool FileLoader::openFile(string path)
 	// Load the file
 	obj::ObjModel model = obj::parseObjModel(in);
 
-	// Make sure that the model is in triangle form
-	// tesselateObjModel(model);
-/*	cout << "Normals in File" << endl;
-	for (auto i = model.normal.begin(); i != model.normal.end(); i++)
+	// Object isnt in triangle form
+	if (tesselate)
 	{
-		normals.push_back(*i);
-		
-		//Print the normals as they are read in
-		cout << *i << " - ";
-	}*/
+		// Make sure that the model is in triangle form
+		tesselateObjModel(model);
+	}
 
 
 	// Just get the start iterator for the faces map
@@ -99,13 +95,15 @@ bool FileLoader::openFile(string path)
 		temp.push_back(model.vertex[pos+1]);
 		temp.push_back(model.vertex[pos+2]);
 
-		int norPos = (x->n)*3;
+		// If the file did not get tessalated, because this is a crash otherwise
+		if (!tesselate)
+		{
+			int norPos = (x->n)*3;
 
-		normals.push_back(model.normal[norPos]);
-		normals.push_back(model.normal[norPos+1]);
-		normals.push_back(model.normal[norPos+2]);
-
-		//cout << model.normal[norPos] << " " << model.normal[norPos+1] << " " << model.normal[norPos+2] << endl;
+			normals.push_back(model.normal[norPos]);
+			normals.push_back(model.normal[norPos+1]);
+			normals.push_back(model.normal[norPos+2]);
+		}
 	}
 
 	vertexData  = new GLfloat[temp.size()];

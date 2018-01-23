@@ -14,7 +14,7 @@ class Model
 {
 	public:
 		Model(Model &m);
-		Model(GLuint s, std::string path);
+		Model(GLuint s, std::string path, bool tessalate = false);
 
 		~Model();
 

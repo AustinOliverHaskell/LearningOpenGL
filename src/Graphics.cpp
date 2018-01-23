@@ -100,7 +100,7 @@ void Graphics::setupGL()
 	//m1 = scale(mat4(), vec3(0.25f, 0.25f, 0.25f)); 
 
 	glm::mat4 m2 = translate(glm::mat4(), vec3(-2.0f, -1.01f, -2.0f));
-	//glm::mat4 m3 = scale(glm::mat4(), vec3(8.0f, 0.0f, 8.0f));
+	glm::mat4 m3 = translate(glm::mat4(), vec3(8.0f, 0.0f, 8.0f));
 	//Model3 = translate(Model3, vec3(0.0f, -1.0f, 0.0f));
 	// Our ModelViewProjection : multiplication of our 3 matrices
 
@@ -108,9 +108,11 @@ void Graphics::setupGL()
 	Model * model = new Model(shaders, "./obj/cube.obj");
 	GraphicDebugger * debugger = new GraphicDebugger();
 	Model * sphere = new Model(shaders, "./obj/sphere.obj");
+	Model * custom = new Model(shaders, "./obj/random_multi_layer_test.obj", true);
 
-	model->initBuffers();
+	model ->initBuffers();
 	sphere->initBuffers();
+	custom->initBuffers();
 
 	glUseProgram(shaders);
 	GLuint LightID = glGetUniformLocation(shaders, "LightPosition_worldspace");
@@ -144,6 +146,7 @@ void Graphics::setupGL()
 		mat4 MVP = projectionMatrix * viewMatrix * m1;
 
 
+		// Could this be an inline function?
 		glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &MVP[0][0]);
 		glUniformMatrix4fv(ModelMatrixID, 1, GL_FALSE, &modelMatrix[0][0]);
 		glUniformMatrix4fv(ViewMatrixID, 1, GL_FALSE, &viewMatrix[0][0]);
@@ -159,6 +162,11 @@ void Graphics::setupGL()
 		
 		sphere->draw();
 
+		modelMatrix = m3;
+		MVP = projectionMatrix * viewMatrix * m3;
+
+		glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &MVP[0][0]);
+		glUniformMatrix4fv(ModelMatrixID, 1, GL_FALSE, &modelMatrix[0][0]);
 
 		// Swap buffers
 		glfwSwapBuffers(window);

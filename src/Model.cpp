@@ -13,13 +13,13 @@ Model::Model(Model &m)
 	faceCount = m.getFaceCount();
 }
 
-Model::Model(GLuint s, std::string path)
+Model::Model(GLuint s, std::string path, bool tessalate)
 {
 	shader = s;
 
 	FileLoader * file = new FileLoader();
 
-	if (!file->openFile(path))
+	if (!file->openFile(path, tessalate))
 	{
 		std::cout << "Filed to load file: " << path << std::endl;
 	}

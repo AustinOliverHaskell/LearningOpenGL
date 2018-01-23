@@ -14,7 +14,7 @@ class FileLoader
 		FileLoader();
 		~FileLoader();
 
-		bool openFile(string path);
+		bool openFile(string path, bool tesselate = false);
 
 		uint getFaceCount();
 		uint getVertexCount();

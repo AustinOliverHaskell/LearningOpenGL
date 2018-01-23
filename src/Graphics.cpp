@@ -73,7 +73,7 @@ void Graphics::setupGL()
 	Controls * controls = new Controls(window);
 
 	// White background
-	glClearColor(0.5f, 0.5f, 0.5f, 0.0f);
+	glClearColor(0.4f, 0.4f, 0.6f, 0.0f);
 
 
 	GLuint VertexArrayID;
@@ -82,35 +82,42 @@ void Graphics::setupGL()
 
 	glEnable(GL_DEPTH_TEST);
 	glDepthFunc(GL_LESS);
-	//glEnable(GL_CULL_FACE);
+	glEnable(GL_CULL_FACE);
 
 	// Compile shaders
-	GLuint shaders = loadShaders("./shaders/SimpleVertexShader.vertexshader", "./shaders/SimpleFragmentShader.fragmentshader");
+	GLuint shaders = loadShaders("./shaders/lightShader.vertexshader", "./shaders/lightShader.fragmentshader");
 
 	// Get a handle for our "MVP" uniform
 	// MVP = Model, View, and Projection
-	GLuint MatrixID = glGetUniformLocation(shaders, "MVP");
+	GLuint MatrixID      = glGetUniformLocation(shaders, "MVP");
+	GLuint ViewMatrixID  = glGetUniformLocation(shaders,   "V");
+	GLuint ModelMatrixID = glGetUniformLocation(shaders,   "M");
 
-	mat4 m1;
-	m1 = rotate(mat4(), 90.0f, vec3(0.0f, 0.0f, 0.0f));
-	m1 = translate(m1, vec3(-5.0f, -5.0f, -5.0f));
-	m1 = scale(mat4(), vec3(0.25f, 0.25f, 0.25f)); 
+
+	mat4 m1 = mat4(1);
+	//m1 = rotate(mat4(), 90.0f, vec3(0.0f, 0.0f, 0.0f));
+	//m1 = translate(m1, vec3(-5.0f, -5.0f, -5.0f));
+	//m1 = scale(mat4(), vec3(0.25f, 0.25f, 0.25f)); 
 
 	glm::mat4 m2 = translate(glm::mat4(), vec3(-2.0f, -1.01f, -2.0f));
-	glm::mat4 m3 = scale(glm::mat4(), vec3(8.0f, 0.0f, 8.0f));
+	//glm::mat4 m3 = scale(glm::mat4(), vec3(8.0f, 0.0f, 8.0f));
 	//Model3 = translate(Model3, vec3(0.0f, -1.0f, 0.0f));
 	// Our ModelViewProjection : multiplication of our 3 matrices
 
 	// Could wrap this in some kind of "Object Manager", but thats not needed for this assignment
-	Plane * plane = new Plane();
 	Model * model = new Model(shaders, "./obj/cube.obj");
-	Model * other = new Model(shaders, "./obj/random_multi_layer_test.obj");
 	GraphicDebugger * debugger = new GraphicDebugger();
+	Model * sphere = new Model(shaders, "./obj/sphere.obj");
 
 	model->initBuffers();
-	other->initBuffers();
+	sphere->initBuffers();
 
-	//model->printNormals();
+	glUseProgram(shaders);
+	GLuint LightID = glGetUniformLocation(shaders, "LightPosition_worldspace");
+
+	// Not changing, no need to put it in the loop like the 
+	//  tutorial does.
+	glm::vec3 lightPos = glm::vec3(3, 3, 3);
 
 	do {
 
@@ -122,42 +129,36 @@ void Graphics::setupGL()
 		// Use our shader
 		glUseProgram(shaders);
 
-		if (glfwGetKey( window, GLFW_KEY_B ) == GLFW_PRESS){
-	
-			m1 = glm::rotate(m1, 0.025f, vec3(1.0f, 0.0f, 0.0f));
+		glUniform3f(LightID, lightPos.x, lightPos.y, lightPos.z);
 
-		}
-
-		if (glfwGetKey( window, GLFW_KEY_N ) == GLFW_PRESS){
-	
-			m1 = glm::rotate(m1, 0.025f, vec3(0.0f, 1.0f, 0.0f));
-
-		}
-
-		if (glfwGetKey( window, GLFW_KEY_M ) == GLFW_PRESS){
-	
-			m1 = glm::rotate(m1, 0.025f, vec3(0.0f, 0.0f, 1.0f));
-
-		}
 
 		if (glfwGetKey( window, GLFW_KEY_Q) == GLFW_PRESS)
 		{
 			debugger->showFPS();
 		}
 
+		// Get matricies
+		mat4 viewMatrix = controls->getViewMatrix();
+		mat4 modelMatrix = m1;
+		mat4 projectionMatrix = controls->getProjectionMatrix();
+		mat4 MVP = projectionMatrix * viewMatrix * m1;
 
-		glm::mat4 MVP = controls->getProjectionMatrix() * controls->getViewMatrix() * m1;
+
 		glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &MVP[0][0]);
+		glUniformMatrix4fv(ModelMatrixID, 1, GL_FALSE, &modelMatrix[0][0]);
+		glUniformMatrix4fv(ViewMatrixID, 1, GL_FALSE, &viewMatrix[0][0]);
+
+
 		model->draw();
 
-		glm::mat4 MVP2 = controls->getProjectionMatrix() * controls->getViewMatrix() * m2;
-		glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &MVP2[0][0]);
-		other->draw();
+		modelMatrix = m2;
+		MVP = projectionMatrix * viewMatrix * m2;
 
-		// Draw a plane
-		glm::mat4 MVP3 = controls->getProjectionMatrix() * controls->getViewMatrix() * m3;
-		glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &MVP3[0][0]);
-		//plane->draw();
+		glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &MVP[0][0]);
+		glUniformMatrix4fv(ModelMatrixID, 1, GL_FALSE, &modelMatrix[0][0]);
+		
+		sphere->draw();
+
 
 		// Swap buffers
 		glfwSwapBuffers(window);
@@ -167,9 +168,7 @@ void Graphics::setupGL()
 
 
 	// Cleanup, each of these objects knows how to clear its own buffers
-	delete plane;
 	delete model;
-	delete other;
 	delete debugger;
 
 	glDeleteVertexArrays(1, &VertexArrayID);

@@ -32,10 +32,11 @@ Model::Model(GLuint s, std::string path)
 
 	GLfloat * colors = new GLfloat[faceCount * sizeof(vec3) * 3];
 
+	// Define color data for the object
 	for (uint i = 0; i < faceCount * sizeof(vec3); i++)
 	{
-		colors[i] = 0.1;
-		colors[i+1] = 0.1;
+		colors[i  ] = 0.5;
+		colors[i+1] = 0.5;
 		colors[i+2] = 0.8;
 	}
 
@@ -98,9 +99,9 @@ void Model::initBuffers()
 	glBindBuffer(GL_ARRAY_BUFFER, colors);
 	glBufferData(GL_ARRAY_BUFFER, faceCount * sizeof(vec3) * 3, colorData, GL_STATIC_DRAW);
 
-	//glGenBuffers(1, &normals);
-	//glBindBuffer(GL_ARRAY_BUFFER, normals);
-	//glBufferData(GL_ARRAY_BUFFER, faceCount * sizeof(vec3) * 3, normalData, GL_STATIC_DRAW);
+	glGenBuffers(1, &normals);
+	glBindBuffer(GL_ARRAY_BUFFER, normals);
+	glBufferData(GL_ARRAY_BUFFER, faceCount * sizeof(vec3) * 3, normalData, GL_STATIC_DRAW);
 
 	setupComplete = true;
 }
@@ -117,9 +118,9 @@ void Model::draw()
 		glBindBuffer(GL_ARRAY_BUFFER, colors);
 		glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
 
-		//glEnableVertexAttribArray(2);
- 		//glBindBuffer(GL_ARRAY_BUFFER, normals);
- 		//glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
+		glEnableVertexAttribArray(2);
+ 		glBindBuffer(GL_ARRAY_BUFFER, normals);
+ 		glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
 
 		glDrawArrays(GL_TRIANGLES, 0, sizeof(vec3)*faceCount*3);
 

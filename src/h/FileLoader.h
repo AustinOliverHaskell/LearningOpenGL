@@ -26,13 +26,17 @@ class FileLoader
 	private:
 		vector <ifstream> fileRefrences;
 
-		vector <glm::vec3> verticies;
 		vector <glm::vec2> uvs;
+		
 		vector <float> normals;
+		vector <float> verticies;
 
 		GLfloat * vertexData;
 		GLfloat * uvsData;
 
-		uint vertexCount; 
 		uint faceCount;
+
+		glm::vec3 calcNormal(glm::vec3 one, glm::vec3 two, glm::vec3 three);
+		glm::vec3 normalize(glm::vec3 vec);
+
 };

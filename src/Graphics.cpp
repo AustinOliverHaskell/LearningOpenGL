@@ -86,6 +86,8 @@ void Graphics::setupGL()
 
 	// Compile shaders
 	GLuint shaders = loadShaders("./shaders/lightShader.vertexshader", "./shaders/lightShader.fragmentshader");
+	GLuint solidShader = loadShaders("./shaders/SimpleVertexShader.vertexshader", "./shaders/SimpleFragmentShader.fragmentshader");
+
 
 	// Get a handle for our "MVP" uniform
 	// MVP = Model, View, and Projection
@@ -93,35 +95,50 @@ void Graphics::setupGL()
 	GLuint ViewMatrixID  = glGetUniformLocation(shaders,   "V");
 	GLuint ModelMatrixID = glGetUniformLocation(shaders,   "M");
 
+	GLuint colorID 			  = glGetUniformLocation(solidShader, "MVP");
+	GLuint colorViewMatrixID  = glGetUniformLocation(solidShader,   "V");
+	GLuint colorModelMatrixID = glGetUniformLocation(solidShader,   "M");
+
 
 	mat4 m1 = mat4(1);
 	//m1 = rotate(mat4(), 90.0f, vec3(0.0f, 0.0f, 0.0f));
 	//m1 = translate(m1, vec3(-5.0f, -5.0f, -5.0f));
 	//m1 = scale(mat4(), vec3(0.25f, 0.25f, 0.25f)); 
 
-	glm::mat4 m2 = translate(glm::mat4(), vec3(-2.0f, -1.01f, -2.0f));
-	glm::mat4 m3 = translate(glm::mat4(), vec3(8.0f, 0.0f, 8.0f));
+	mat4 m2 = translate(mat4(), vec3(-2.0f, -1.01f, -2.0f));
+	mat4 m3 = translate(mat4(), vec3(8.0f, 0.0f, 8.0f));
 	//Model3 = translate(Model3, vec3(0.0f, -1.0f, 0.0f));
 	// Our ModelViewProjection : multiplication of our 3 matrices
 
 	// Could wrap this in some kind of "Object Manager", but thats not needed for this assignment
 	Model * model = new Model(shaders, "./obj/cube.obj");
 	GraphicDebugger * debugger = new GraphicDebugger();
-	Model * sphere = new Model(shaders, "./obj/sphere.obj");
-	Model * custom = new Model(shaders, "./obj/random_multi_layer_test.obj", true);
+	Model * sphere = new Model(solidShader, "./obj/sphere.obj");
+	//Model * noNormalCube = new Model(shaders, "./obj/no_normals_cube.obj", true);
+	Model * lightSource = new Model(solidShader, "./obj/sphere.obj");
+	//Model * custom = new Model(solidShader, "./obj/random_multi_layer_test.obj", true);
 
-	model ->initBuffers();
-	sphere->initBuffers();
-	custom->initBuffers();
+
+	model ->initBuffers(MatrixID, ViewMatrixID, ModelMatrixID);
+	sphere->initBuffers(MatrixID, ViewMatrixID, ModelMatrixID);
+
+	// This object is for testing the normal calculations
+	//noNormalCube->initBuffers(MatrixID, ViewMatrixID, ModelMatrixID);
+
+	lightSource->initBuffers(colorID, colorViewMatrixID, colorModelMatrixID);
+	//custom->initBuffers(MatrixID, ViewMatrixID, ModelMatrixID);
 
 	glUseProgram(shaders);
 	GLuint LightID = glGetUniformLocation(shaders, "LightPosition_worldspace");
 
-	// Not changing, no need to put it in the loop like the 
-	//  tutorial does.
-	glm::vec3 lightPos = glm::vec3(3, 3, 3);
+	vec3 lightPos = vec3(3, 3, 3);
+	mat4 lightMat = translate(mat4(), lightPos);
+	lightMat = scale(lightMat, vec3(0.5f, 0.5f, 0.5f));
+
+	sphere->setColor(0.5f, 0.5f, 1.0f);
 
 	do {
+
 
 		// Clear the screen
 		glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT );
@@ -139,34 +156,22 @@ void Graphics::setupGL()
 			debugger->showFPS();
 		}
 
-		// Get matricies
-		mat4 viewMatrix = controls->getViewMatrix();
-		mat4 modelMatrix = m1;
-		mat4 projectionMatrix = controls->getProjectionMatrix();
-		mat4 MVP = projectionMatrix * viewMatrix * m1;
+		if (glfwGetKey( window, GLFW_KEY_G) == GLFW_PRESS)
+		{
+			sphere->setColor(0.0f, 0.0f, 1.0f);
+		}
+		else
+		{
+			sphere->setColor(0.5f, 0.5f, 0.5f);
+		}
 
+		// Wow this is alot cleaner
+		model->draw(controls, m1);
+		sphere->draw(controls, m2);
 
-		// Could this be an inline function?
-		glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &MVP[0][0]);
-		glUniformMatrix4fv(ModelMatrixID, 1, GL_FALSE, &modelMatrix[0][0]);
-		glUniformMatrix4fv(ViewMatrixID, 1, GL_FALSE, &viewMatrix[0][0]);
-
-
-		model->draw();
-
-		modelMatrix = m2;
-		MVP = projectionMatrix * viewMatrix * m2;
-
-		glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &MVP[0][0]);
-		glUniformMatrix4fv(ModelMatrixID, 1, GL_FALSE, &modelMatrix[0][0]);
-		
-		sphere->draw();
-
-		modelMatrix = m3;
-		MVP = projectionMatrix * viewMatrix * m3;
-
-		glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &MVP[0][0]);
-		glUniformMatrix4fv(ModelMatrixID, 1, GL_FALSE, &modelMatrix[0][0]);
+		//noNormalCube->draw(controls, m3);
+		lightSource->draw(controls, lightMat);
+		//custom->draw(controls, m3);
 
 		// Swap buffers
 		glfwSwapBuffers(window);
@@ -176,6 +181,8 @@ void Graphics::setupGL()
 
 
 	// Cleanup, each of these objects knows how to clear its own buffers
+	//delete noNormalCube;
+	delete sphere;
 	delete model;
 	delete debugger;
 

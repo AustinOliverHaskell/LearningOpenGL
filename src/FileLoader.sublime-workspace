@@ -4,10 +4,6 @@
 		"selected_items":
 		[
 			[
-				"set",
-				"setColor\t(Model.cpp)"
-			],
-			[
 				"edge",
 				"edgeTwo"
 			],
@@ -186,6 +182,10 @@
 			[
 				"lB",
 				"lBulletSoftBody"
+			],
+			[
+				"set",
+				"setZIndex"
 			],
 			[
 				"ab",
@@ -387,67 +387,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "Graphics.cpp",
-			"settings":
-			{
-				"buffer_size": 5476,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "FileLoader.cpp",
-			"settings":
-			{
-				"buffer_size": 4054,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "h/FileLoader.h",
-			"settings":
-			{
-				"buffer_size": 687,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "shaders/SimpleFragmentShader.fragmentshader",
-			"settings":
-			{
-				"buffer_size": 140,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "shaders/SimpleTransform.vertexshader",
-			"settings":
-			{
-				"buffer_size": 350,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Model.cpp",
-			"settings":
-			{
-				"buffer_size": 3547,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "h/Model.h",
-			"settings":
-			{
-				"buffer_size": 1276,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -501,27 +440,25 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/home/austin/Documents/repos/LearningOpenGL/src",
-		"/home/austin/Documents/repos/LearningOpenGL/src/h",
-		"/home/austin/Documents/repos/LearningOpenGL/src/objLoaders",
-		"/home/austin/Documents/repos/LearningOpenGL/src/shaders",
-		"/home/austin/Documents/repos/LearningOpenGL/src/shaders"
-	],
 	"file_history":
 	[
-		"/home/austin/Documents/repos/LearningOpenGL/src/shaders/lightShader.vertexshader",
-		"/home/austin/Documents/repos/LearningOpenGL/src/shaders/lightShader.fragmentshader",
-		"/home/austin/Documents/repos/LearningOpenGL/src/obj/cube.obj",
+		"/home/austin/Documents/repos/EvolvingStormResistantStructures/Source/code/ObjFileBuilder.java",
+		"/home/austin/Documents/ObjCreation/Vec3.java",
+		"/home/austin/Documents/repos/EvolvingStormResistantStructures/Source/code/Vec.java",
+		"/home/austin/Documents/ObjCreation/Structure.java",
 		"/home/austin/Documents/repos/LearningOpenGL/src/makefile.make",
-		"/home/austin/Documents/repos/EvolvingStormResistantStructures/Source/code/PhysicsEngine/makefile.make",
+		"/home/austin/Documents/repos/LearningOpenGL/src/h/Model.h",
+		"/home/austin/Documents/repos/LearningOpenGL/src/Model.cpp",
 		"/home/austin/Documents/repos/LearningOpenGL/src/objLoaders/objload.h",
+		"/home/austin/Documents/repos/LearningOpenGL/src/h/FileLoader.h",
+		"/home/austin/Documents/repos/LearningOpenGL/src/obj/cube.obj",
+		"/home/austin/Documents/repos/LearningOpenGL/src/FileLoader.cpp",
+		"/home/austin/Documents/repos/LearningOpenGL/src/shaders/lightShader.fragmentshader",
+		"/home/austin/Documents/repos/LearningOpenGL/src/Graphics.cpp",
 		"/home/austin/Documents/AnimeList",
 		"/home/austin/Documents/repos/LearningOpenGL/src/Cube.cpp",
 		"/home/austin/Documents/repos/LearningOpenGL/src/Controls.cpp",
 		"/home/austin/Documents/repos/LearningOpenGL/src/main.cpp",
-		"/home/austin/Documents/repos/LearningOpenGL/src/h/FileLoader.h",
 		"/home/austin/Documents/repos/LearningOpenGL/src/obj/no_normals_cube.obj",
 		"/home/austin/Documents/repos/LearningOpenGL/src/obj/sphere.obj",
 		"/home/austin/Documents/gl/LearningOpenGL/src/controls.h",
@@ -632,17 +569,11 @@
 		"/home/austin/Downloads/p4/server.rb",
 		"/home/austin/Downloads/p4/public/script.js",
 		"/home/austin/Downloads/p4/public/main.css",
-		"/home/austin/Downloads/p4/public/index.html",
-		"/home/austin/Downloads/p4/defs.rb",
-		"/home/austin/Desktop/DailyChallanges/MessingWithGolang/IOTest.go",
-		"/home/austin/Documents/Float-Math-With-Ints/subtract.h",
-		"/home/austin/Documents/Float-Math-With-Ints/multiply.h",
-		"/home/austin/Documents/Float-Math-With-Ints/mantissa.h",
-		"/home/austin/Documents/Float-Math-With-Ints/header.h"
+		"/home/austin/Downloads/p4/public/index.html"
 	],
 	"find":
 	{
-		"height": 24.0
+		"height": 26.0
 	},
 	"find_in_files":
 	{
@@ -656,41 +587,6 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"temp",
-			"glm::",
-			"h",
-			"\t\n",
-			"fork",
-			"getPoints",
-			"findSlope",
-			"System",
-			"HORIZONTAL",
-			"black",
-			"\\0",
-			"was Incorrect.",
-			") ",
-			"was Incorrect.",
-			"malloc",
-			"medium_array_length",
-			"mediumarray",
-			"short_array_length",
-			"shortarray",
-			"int_max",
-			"shouldconvert",
-			"int_min",
-			"int_max",
-			"@",
-			"int_min",
-			"int_max",
-			"largearray",
-			"mediumarray",
-			"shortarray",
-			"large_array_length",
-			"medium_array_length",
-			"short_array_length",
-			"shouldConvert",
-			"int_min",
-			"int_max"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -708,230 +604,14 @@
 	"groups":
 	[
 		{
-			"selected": 5,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "Graphics.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5476,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5133,
-								5133
-							]
-						],
-						"settings":
-						{
-							"glslvalidator_configured": true,
-							"glslvalidator_enabled": 1,
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1557.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "FileLoader.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4054,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2985,
-								2985
-							]
-						],
-						"settings":
-						{
-							"glslvalidator_configured": true,
-							"glslvalidator_enabled": 1,
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "h/FileLoader.h",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 687,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								658,
-								658
-							]
-						],
-						"settings":
-						{
-							"glslvalidator_configured": true,
-							"glslvalidator_enabled": 1,
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "shaders/SimpleFragmentShader.fragmentshader",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 140,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"glslvalidator_configured": true,
-							"glslvalidator_enabled": 1,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "shaders/SimpleTransform.vertexshader",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 350,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"glslvalidator_configured": true,
-							"glslvalidator_enabled": 1,
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "Model.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3547,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								850,
-								850
-							]
-						],
-						"settings":
-						{
-							"glslvalidator_configured": true,
-							"glslvalidator_enabled": 1,
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "h/Model.h",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1276,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								880,
-								880
-							]
-						],
-						"settings":
-						{
-							"glslvalidator_configured": true,
-							"glslvalidator_enabled": 1,
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 24.0
+		"height": 26.0
 	},
 	"input":
 	{
@@ -965,10 +645,10 @@
 		"height": 0.0
 	},
 	"pinned_build_system": "",
-	"project": "learningGL.sublime-project",
+	"project": "FileLoader.sublime-project",
 	"replace":
 	{
-		"height": 44.0
+		"height": 48.0
 	},
 	"save_all_on_build": true,
 	"select_file":

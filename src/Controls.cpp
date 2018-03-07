@@ -18,13 +18,13 @@ Controls::Controls(GLFWwindow* w)
 
 	FOV = 45;
 
-	hAngle = 0.0f;
-	vAngle = 0.0f;
+	hAngle = 7.95f;
+	vAngle = -0.53f;
 
 	speed = 6.0f;
 	mouseSpeed = 0.01f;
 
-	position = glm::vec3( 10, -10, 3 );
+	position = glm::vec3( 8, 5, 3 );
 
 	wireframeEnabled = false;
 
@@ -74,18 +74,19 @@ void Controls::computeMatrices()
 	//  the user moved the mouse times the speed of the change
 	//  that we defined above (mouseSpeed). The variable mouseSpeed
 	//  we defined can be changed to suit the user
-	hAngle += mouseSpeed * (float)(WINDOW_WIDTH/2.0f - mouseX) * -1.0f;
+	hAngle += mouseSpeed * (float)(WINDOW_WIDTH/2.0f - mouseX);
 	vAngle += mouseSpeed * (float)(WINDOW_HEIGHT/2.0f - mouseY);
 
-	if (vAngle > 180.0f)
+	if (vAngle > PI/2)
 	{
-		vAngle = 180.0f;
+		vAngle = PI/2;
 	}
-	else if (vAngle < 0)
+	else if (vAngle < -PI/2)
 	{
-		vAngle = 0;
+		vAngle = -PI/2;
 	}
 
+	//std::cout << vAngle << std::endl;
 
 	// Compute the direction of the camera
 	//  Spherical coordinates to Cartesian coordinates conversion
@@ -120,6 +121,25 @@ void Controls::computeMatrices()
 	    position -= right * deltaTime * speed;
 	}
 
+	// Strafe left
+	if (glfwGetKey( window, GLFW_KEY_P ) == GLFW_PRESS){
+	    // Dump campera info
+	    std::cout << "Camera Pos:(" << position.x << ", " << position.y << ", " << position.z<< ")" << std::endl;
+	    std::cout << "Camera Direction:(" << direction.x << ", " << direction.y << ", " << direction.z<< ")" << std::endl;
+	    std::cout << "FOV:" << FOV << std::endl;
+	    std::cout << "hAngle:" << hAngle << std::endl;
+	    std::cout << "vAngle:" << vAngle << std::endl; 
+	}
+
+		// Strafe left
+	if (glfwGetKey( window, GLFW_KEY_C ) == GLFW_PRESS)
+	{
+		// Arbitrary
+	    direction = vec3(-0.269239, 0.064734, -0.960895);
+	    position  = vec3(8.386446, -0.636339, 14.926327);
+	}
+	
+
 	// Zoom, I added this - Austin :P
 	if (glfwGetKey(window, GLFW_KEY_RIGHT_BRACKET) == GLFW_PRESS)
 	{
@@ -139,12 +159,12 @@ void Controls::computeMatrices()
 
 	if (glfwGetKey(window, GLFW_KEY_X) == GLFW_PRESS)
 	{
-		position -= vec3(0.0f, -0.1f, 0.0f);
+		position -= vec3(0.0f, 0.1f, 0.0f);
 	}
 
 	if (glfwGetKey(window, GLFW_KEY_SPACE) == GLFW_PRESS)
 	{
-		position -= vec3(0.0f, 0.1f, 0.0f);
+		position -= vec3(0.0f, -0.1f, 0.0f);
 	}
 
 	static int oldState = GLFW_RELEASE;
@@ -164,14 +184,6 @@ void Controls::computeMatrices()
 		}
 	}
 	oldState = newState;
-
-	if (glfwGetKey(window, GLFW_KEY_P) == GLFW_PRESS)
-	{
-		std::cout << "Camera Info-- " << std::endl;
-		std::cout << "  position: " << to_string(position) << std::endl;
-		std::cout << "  direction: "<< to_string(direction) << std::endl;
-		std::cout << "  FOV: " << FOV << std::endl;
-	}
 
 	projectionMatrix = glm::perspective(glm::radians(FOV), ASPECT_RATIO, 0.1f, 100.0f);
 

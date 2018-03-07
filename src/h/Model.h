@@ -31,9 +31,13 @@ class Model
 		uint getFaceCount();
 		// -------------------
 
+		// ----- Setters -----
+		void setColor(float r, float g, float b);
+		// -------------------
+
 		// ----- Draw -----
-		void draw();
-		void initBuffers();
+		void draw(Controls * controls, mat4 m);
+		void initBuffers(GLuint matID, GLuint viewID, GLuint modelID);
 		// ----------------
 
 		// ----- Other -----
@@ -52,6 +56,10 @@ class Model
 		GLuint verticies;
 		GLuint colors;
 		GLuint normals;
+
+		GLuint MatrixID;
+		GLuint ViewMatrixID;
+		GLuint ModelMatrixID;
 
 		bool setupComplete;
 
